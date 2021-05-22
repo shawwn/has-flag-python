@@ -4,7 +4,7 @@ Check if argv has a specific flag.
 
 This is a port of the Node.js package [`has-flag`](https://github.com/sindresorhus/has-flag) to Python.
 
-## Quickstart
+## Install
 
 ```
 python3 -m pip install -U has-flag
