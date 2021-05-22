@@ -3,7 +3,7 @@ name = "has-flag"
 version = "0.1.0"
 readme = "README.md"
 homepage = "https://github.com/shawwn/has-flag-python"
-description = "A port of the Node.js package `has-flag` to Python"
+description = "Check if argv has a specific flag"
 authors = ["Shawn Presser"]
 license = "MIT"
 

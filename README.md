@@ -1,12 +1,8 @@
 # has-flag
 
-A port of the Node.js package `has-flag` to Python.
+Check if argv has a specific flag.
 
-WARNING: This repo is in development. It was automatically generated with [mkpylib](https://github.com/shawwn/scrap/blob/master/mkpylib). If you're reading this message, it means that I use this repo for my own purposes right now. It might not do anything at all; the default functionality is `print('TODO')`.
-
-If you really want to try it out, feel free. I recommend reading through the code and commit history to see if it does what you need, or [ask me](#contact) for status updates.
-
-Stay tuned!
+This is a port of the Node.js package [`has-flag`](https://github.com/sindresorhus/has-flag) to Python.
 
 ## Quickstart
 
@@ -16,19 +12,37 @@ python3 -m pip install -U has-flag
 
 (That strange-looking setup command is because I've found it to be the most reliable. The `pip` command often aliases to python 2, and `pip3` often installs to the wrong Python package directory.)
 
-Once it's installed, you can do this:
+## Usage
 
 ```py
-import has_flag
+from has_flag import has_flag
 
-print('TODO')
+has_flag('unicorn');
+#>>> True
+
+has_flag('--unicorn');
+#>>> True
+
+has_flag('f');
+#>>> True
+
+has_flag('-f');
+#>>> True
+
+has_flag('foo=bar');
+#>>> True
+
+has_flag('foo');
+#>>> False
+
+has_flag('rainbow');
+#>>> False
 ```
 
-... which will print this:
+```
+$ python3 foo.py -f --unicorn --foo=bar -- --rainbow
+```
 
-```
-TODO
-```
 
 ## License
 
