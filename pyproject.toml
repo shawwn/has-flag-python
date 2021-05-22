@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "has-flag"
-version = "0.1.0"
+version = "0.1.1"
 readme = "README.md"
 homepage = "https://github.com/shawwn/has-flag-python"
 description = "Check if argv has a specific flag"
